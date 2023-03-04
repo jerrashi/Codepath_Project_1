@@ -2,6 +2,7 @@ package com.example.simplecounter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 import android.widget.Button as Button
 
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
             if (counter >= 100) {
                 // Show upgrade button and set onClickListener
-                upgradeButton.visibility = view.VISIBLE
+                upgradeButton.visibility = View.VISIBLE
                 upgradeButton.setOnClickListener {
                     button.text = """Add 2"""
 
@@ -35,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     // Hide upgrade button again
-                    upgradeButton.visibility = view.INVISIBLE
+                    upgradeButton.visibility = View.INVISIBLE
 
                 }
             }
