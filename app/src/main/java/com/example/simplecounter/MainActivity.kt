@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         val textView = findViewById<TextView>(R.id.textView)
 
-        val upgradeButton = findViewbyId<Button>(R.id.upgradeBtn)
+        val upgradeButton = findViewById<Button>(R.id.upgradeBtn)
 
         button.setOnClickListener {
             // Toast.makeText(it.context, "Clicked Button!", Toast.LENGTH_SHORT).show()
@@ -39,8 +39,6 @@ class MainActivity : AppCompatActivity() {
 
                 }
             }
-
-        }
         }
     }
 }
